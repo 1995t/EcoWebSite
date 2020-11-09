@@ -147,7 +147,7 @@
 	$email = $_POST['email'];
 	$pass = $_POST['password'];
 	if(($email == "john@sample.com") && ($pass == "password")){
-		return true;
+		echo "<script type='text/javascript'> document.location ='home.php'; </script>";
 	}
 
 	include_once 'user/db.php';   
