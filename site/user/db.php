@@ -13,7 +13,7 @@
          }
           else
           {
-              echo "Database does not exists"."<br><br>";
+              //echo "Database does not exists"."<br><br>";
               if($conn->query("create database $mysql_db"))
                   {
                     $conn->select_db($mysql_db);
@@ -21,7 +21,7 @@
                   }
                   else
                   {
-                    echo "Error while creating database. "."<br><br>";
+                    //echo "Error while creating database. "."<br><br>";
                   }
           }  
 
