@@ -141,15 +141,16 @@
 </body>
 </html>
 <?php
-  	$email = $_POST['email'];
-	  $pass = $_POST['password'];
-	  if(($email == "john@sample.com") && ($pass == "password")){
-		  return true;
-	  }
-	  
-  include_once 'user/db.php';
+
   if(isset($_POST['submit']))
    {
+	$email = $_POST['email'];
+	$pass = $_POST['password'];
+	if(($email == "john@sample.com") && ($pass == "password")){
+		return true;
+	}
+
+	include_once 'user/db.php';   
 	if(empty($_POST['email']) || empty($_POST['password']))
 		 {
 	        die('Please fill all the required fields');
