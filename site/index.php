@@ -9,7 +9,7 @@
 						 // alert("index");
 						 var email = document.getElementById("email").value;
 						 var pass = document.getElementById("password").value;
-						 if((email == "john@sample.com")||(email == "password")){
+						 if((email == "john@sample.com") && (pass == "password")){
 							 return true;
 						 }
 
